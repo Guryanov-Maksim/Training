@@ -7,4 +7,338 @@ body {
   line-height: 24px;
   color: #000;
   background: #fff;
+  word-break: break-all;
+}
+
+.main-header {
+  background: #f3f7f9;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header-top {
+  background: #293449;
+  margin-bottom: 46px;
+}
+
+.header-top .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-header .logo {
+  flex-shrink: 0;
+  min-width: auto;
+  position: relative;
+  padding: 10px 55px 8px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff;
+  background: #ee3643;
+  text-transform: uppercase;
+}
+
+.main-header .logo::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 220px;
+  height: 5px;
+  background: #b52933;
+}
+
+.main-header .search-form {
+  position: relative;
+}
+
+.search-form input {
+  align-self: stretch;
+  box-sizing: border-box;
+  width: 270px;
+  padding: 12px 0 12px 49px;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.search-form input::placeholder {
+  color: #fff;
+}
+
+.search-form input:hover {
+  background: #212a3a;
+  border-color: #212a3a;
+}
+
+.search-form input:focus {
+  background: #fff;
+  border-color: #fff;
+}
+
+.search-form input:focus::placeholder {
+  color: #000;
+}
+
+.search-form input + label {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  width: 17px;
+  height: 17px;
+  background: url("../img/search-sprites.png") no-repeat 0 0;
+}
+
+.search-form input:hover + label {
+  background-position: -30px 0;
+}
+
+.search-form input:focus + label {
+  background-position: -60px 0;
+}
+
+
+.header-top a {
+  min-width: 150px;
+  box-sizing: border-box;
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.bookmarks {
+  position: relative;
+  padding: 12px 0 12px 44px;
+}
+
+.bookmarks::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  width: 14px;
+  height: 16px;
+  background: url("../img/bookmark-sprites.png") no-repeat 0 0;
+}
+
+.basket {
+  position: relative;
+  padding: 12px 0 12px 50px;
+}
+
+.basket::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  width: 15px;
+  height: 15px;
+  background: url("../img/basket-sprites.png") no-repeat 0 0;
+}
+
+.bookmarks:hover,
+.basket:hover,
+.bookmarks:focus,
+.basket:focus {
+  background: #212a3a;
+}
+
+.bookmarks:hover::before,
+.bookmarks:focus::before,
+.basket:hover::before,
+.basket:focus::before {
+  background-position: -30px 0;
+}
+
+.bookmarks:active,
+.basket:active {
+  background: #161d29;
+}
+
+.bookmarks:active::before,
+.basket:active::before {
+  background-position: 0 0;
+}
+
+
+.bookmarks:active,
+.basket:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.header-top a:last-child {
+  padding: 13px 20px 12px;
+  background: #63a63e;
+}
+
+.header-top a:last-child:hover,
+.header-top a:last-child:focus {
+  background: #5fbb2d;
+}
+
+.header-top a:last-child:active {
+  background: #518534;
+}
+
+.header-top a:last-child:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-bottom h1 {
+  display: flex;
+  margin: 0;
+  margin-bottom: 42px;
+  padding-left: 53px;
+  padding-top: 2px;
+  width: 247px;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0;
+}
+
+.header-contacts span:nth-child(1) {
+  position: relative;
+  padding: 10px 52px 10px 71px;
+  border: 2px solid #fff;
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.header-contacts span:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  width: 19px;
+  height: 19px;
+  background: url("../img/icon-phone.png") no-repeat 0 0;
+}
+
+.header-contacts span:nth-child(2) {
+  font-size: 14px;
+  padding: 3px 10px;
+}
+
+.user-menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-menu a {
+  display: block;
+  margin-left: 10px;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000;
+  background: #fff;
+}
+
+.user-menu .enter {
+  position: relative;
+  padding-left: 47px;
+}
+
+.user-menu .enter::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  width: 20px;
+  height: 17px;
+  background: url("../img/enter-sprites.png") no-repeat 0 0;
+}
+
+.user-menu a:hover,
+.user-menu a:focus {
+  color: #ee3643;
+}
+
+.user-menu .enter:hover::before,
+.user-menu .enter:focus::before {
+  background-position: -30px 0;
+}
+
+.user-menu a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-menu .enter:active::before {
+  background-position: 0 0;
+}
+
+.main-navigation {
+  margin-bottom: 60px;
+}
+
+.main-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 21px 30px 17px 31px;
+  border-bottom: 5px solid #293449;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 17px;
+  color: #fff;
+  background: #32425c;
+}
+
+.main-navigation .main-page {
+  padding-left: 52px;
+}
+
+.main-navigation .contacts {
+  padding-right: 54px;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  border-bottom-color:#293449;
+  background: #293449;
+}
+
+.main-navigation a:active {
+  border-bottom-color:#1d2739;
+  background: #1d2739;
+  color: rgba(255, 255, 255, 0.3);
 }
