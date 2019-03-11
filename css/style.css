@@ -360,37 +360,37 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.promo-list {
+.promo-block {
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   justify-content: space-between;
-  /* justify-content: flex-end;   */
-  /* align-items: flex-start; */
+  align-items: flex-start;
+  align-content: flex-start;
   margin: 0;
+  margin-bottom: 53px;
   padding: 0;
-  list-style: none;
 }
 
-.promo-list li {
+.promo-block p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
+  margin: 0;
   margin-bottom: 20px;
   box-sizing: border-box;
-  padding: 21px 23px; 
+  padding: 21px 115px 21px 23px; 
   width: 300px;
 }
 
-.promo-list h3 {
-  margin: 0;
+.promo-block b {
   margin-bottom: 14px;
   font-size: 24px;
   line-height: 30px;
   color: #fff;
 }
 
-.promo-list a {
+.promo-block a {
   margin-left: 2px;
   padding: 10px 24px;
   font-size: 14px;
@@ -402,12 +402,51 @@ input[type="radio"].visually-hidden {
   border-radius: 2px;
 }
 
+.promo-block a:hover,
+.promo-block a:focus {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.promo-block a:active{
+  background: rgba(0, 0, 0, 0.3);
+}
+
 .materials {
   background: #ffbf47;
 }
 
+.materials::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  right: 42px;
+  width: 44px;
+  height: 65px;
+  background: url("../img/materials-icon.png") no-repeat 0 0;
+}
+
+.new-flag::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 59px;
+  background: url("../img/new-flag.png") no-repeat 0 0;
+}
+
 .tools {
   background: #3bbce3;
+}
+
+.tools::before {
+  content: "";
+  position: absolute;
+  top: 33px;
+  right: 28px;
+  width: 75px;
+  height: 61px;
+  background: url("../img/tools-icon.png") no-repeat 0 0;
 }
 
 .tools a {
@@ -416,6 +455,16 @@ input[type="radio"].visually-hidden {
 
 .equipment {
   background: #dc91d8;
+}
+
+.equipment::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  right: 31px;
+  width: 78px;
+  height: 62px;
+  background: url("../img/equipment-icon.png") no-repeat 0 0;
 }
 
 .equipment a {
@@ -427,15 +476,130 @@ input[type="radio"].visually-hidden {
   margin-left: 640px;
 }
 
-.delivery {
-  /* order: 2; */
-  background: #ffc047;
-  margin-left: 640px;
+.discount::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  right: 45px;
+  width: 59px;
+  height: 72px;
+  background: url("../img/discount-icon.png") no-repeat 0 0;
 }
 
-.promo-list .manual-tools {
-  /* margin-top: -286px; */
-  margin-top: calc(-30%);
+.discount a {
+  padding: 10px 22px;
+}
+
+.delivery {
+  background: #ffc047;
+  margin-left: 640px;
+  margin-bottom: 0;
+}
+
+.promo-block .delivery {
+  margin-bottom: 0;
+}
+
+.delivery::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  right: 31px;
+  width: 78px;
+  height: 63px;
+  background: url("../img/delivery-icon.png") no-repeat 0 0;
+}
+
+.delivery a {
+  padding: 10px 35px;
+}
+
+.promo-block .right-column {
+  order: 1;
+}
+
+.promo-block .manual-tools {
+  position: relative;
   width: 620px;
   background: gray;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 25px 21px 25px;
+  background: #ab9a85 url("../img/perforator-slide.jpg") no-repeat 0 0;
+}
+
+.slider-list li:first-child {
+  background: #ab9a85 url("../img/drill-slide.jpg") no-repeat 0 0;
+}
+
+.slider-list li:last-child {
+  display: none;
+  background: #ab9a85 url("../img/perforator-slide.jpg") no-repeat 0 0;
+}
+
+.slider-list h4 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.slider-list p {
+  margin: 0;
+  margin-bottom: 123px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.slider-list a {
+  margin: 0;
+  padding: 10px 48px;
+  background: #ee3643;
+}
+
+.slider-list a:hover,
+.slider-list a:focus {
+  background: #ca2c37;
+}
+
+.slider-list a:active{
+  background: #ba2732;
+}
+
+.manual-tools .prev {
+  position: absolute;
+  top: 114px;
+  left: 25px;
+  width: 22px;
+  height: 40px;
+  font-size: 0;
+  background: transparent url("../img/prev-button.png") no-repeat;
+  border: transparent;
+  cursor: pointer;
+}
+
+.manual-tools .next {
+  position: absolute;
+  top: 114px;
+  right: 20px;
+  width: 22px;
+  height: 40px;
+  font-size: 0;
+  background: transparent url("../img/next-button.png") no-repeat;
+  border: transparent;
+  cursor: pointer;
 }
