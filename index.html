@@ -5,6 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -85,40 +86,58 @@
           </section>
         </section>
       </div>
-      <section>
-        <h2>Популярные товары</h2>
-        <a href="#">Все популярные товары</a>
+      <section class="goods container">
+        <div class="goods-header">
+          <h2>Популярные товары:</h2>
+          <a href="#">Все популярные товары</a>
+        </div>
         <ul>
-          <li>
-            <h3>Префоратор BOCSH BFG 9000</h3>
-            <img src="img/bocsh-bfg-9000.jpg" alt="Изображение перфоратора BOCSH BFG 9000" width="184" height="164">
+          <li class="goods-item">
+            <h3>Перфоратор BOSCH BFG 9000</h3>
+            <div class="goods-image">
+              <img src="img/bocsh-bfg-9000.jpg" alt="Изображение перфоратора BOCSH BFG 9000" width="184" height="164">
+            </div>
+            <div class="mask">
+                <a class="buy-button" href="#">Купить</a>
+                <a class="bookmark-button" href="#">В закладки</a>
+            </div>
             <p>32500 р.</p>
-            <p>
-              <a href="#">25500 p.</a>
-            </p>
+            <a class="goods-button" href="#">25500 p.</a>
           </li>
-          <li>
-            <h3>Префоратор BOCSH BFG 3000</h3>
-            <img src="img/bocsh-bfg-3000.jpg" alt="Изображение перфоратора BOCSH BFG 3000" width="127" height="112">
+          <li class="goods-item">
+            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <div class="goods-image">
+              <img src="img/bocsh-bfg-3000.jpg" alt="Изображение перфоратора BOCSH BFG 3000" width="127" height="112">
+            </div>
+            <div class="mask">
+              <a class="buy-button" href="#">Купить</a>
+              <a class="bookmark-button" href="#">В закладки</a>
+            </div>
             <p>22500 р.</p>
-            <p>
-              <a href="#">15500 p.</a>
-            </p>
+            <a class="goods-button" href="#">15500 p.</a>
           </li>
-          <li>
-            <h3>Префоратор BOCSH BFG 6000</h3>
-            <img src="img/bocsh-bfg-6000.jpg" alt="Изображение перфоратора BOCSH BFG 6000" width="144" height="128">
+          <li class="goods-item">
+            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <div class="goods-image">
+              <img src="img/bocsh-bfg-6000.jpg" alt="Изображение перфоратора BOCSH BFG 6000" width="144" height="128">
+            </div>
+            <div class="mask">
+              <a class="buy-button" href="#">Купить</a>
+              <a class="bookmark-button" href="#">В закладки</a>
+            </div>
             <p>30500 р.</p>
-            <p>
-              <a href="#">25500 p.</a>
-            </p>
+            <a class="goods-button" href="#">25500 p.</a>
           </li>
-          <li>
-            <h3>Префоратор BOCSH BFG 2000</h3>
-            <img src="img/bocsh-bfg-2000.jpg" alt="Изображение перфоратора BOCSH BFG 2000" width="127" height="112">
-            <p>
-              <a href="#">12500 p.</a>
-            </p>
+          <li class="goods-item new-flag">
+            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <div class="goods-image">
+              <img src="img/bocsh-bfg-2000.jpg" alt="Изображение перфоратора BOCSH BFG 2000" width="127" height="112">
+            </div>
+            <div class="mask">
+              <a class="buy-button" href="#">Купить</a>
+              <a class="bookmark-button" href="#">В закладки</a>
+            </div>
+            <a class="goods-button" href="#">12500 p.</a>
           </li>
         </ul>
       </section>
