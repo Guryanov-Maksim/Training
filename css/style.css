@@ -940,14 +940,13 @@ input[type="radio"].visually-hidden {
 .services .container {
   display: flex;
   flex-direction: column;
-  padding-top: 65px;
+  padding-top: 67px;
 }
 
 .services h2 {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   font-size: 30px;
-  font-family: 'PT Sans', sans-serif;
   font-weight: normal;
   line-height: 27px;
   text-transform: uppercase;
