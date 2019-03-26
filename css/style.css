@@ -934,6 +934,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services {
+  margin-bottom: 78px;
   background-color: #f4f8fa;
 }
 
@@ -1095,3 +1096,111 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   cursor: pointer;
 }
+
+.about-us-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 86px;
+}
+
+.about-us {
+  width: 540px;
+}
+
+.about-us h2 {
+  margin: 0;
+  margin-bottom: 26px;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.about-us p {
+  width: 540px;
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 13px;
+  font-family: 'PT Sans', Arial, sans-serif;
+  line-height: 24px;
+  word-break: normal;
+}
+
+.about-us p:last-of-type {
+  width: 400px;
+  margin-bottom: 22px;
+}
+
+.about-us .delivery-companies {
+  margin: 0;
+  margin-bottom: 43px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 20px;
+  list-style: none;
+}
+
+.delivery-companies li {
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 20px;
+}
+
+.delivery-companies li::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background: #ee3643;
+}
+
+.red-button {
+  padding: 10px 55px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #ee3643;
+  border-radius: 2px;
+}
+
+.about-us a {
+  padding: 10px 41px;
+}
+
+
+.contacts {
+  width: 300px;
+}
+
+.contacts h2 {
+  margin: 0;
+  margin-bottom: 26px;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.contacts p {
+  width: 185px;
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 13px;
+  font-family: 'PT Sans', Arial, sans-serif;
+  line-height: 24px;
+  word-break: normal;
+}
+
+.contacts .map {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.contacts .contacts-button {
+  padding: 10px 59px 10px 64px; 
+}
+
