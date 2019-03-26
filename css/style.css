@@ -340,11 +340,11 @@ input[type="radio"].visually-hidden {
   background: #32425c;
 }
 
-.main-navigation .main-page {
+.main-navigation .first-item {
   padding-left: 52px;
 }
 
-.main-navigation .contacts {
+.main-navigation .last-item {
   padding-right: 54px;
 }
 
