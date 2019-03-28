@@ -1204,3 +1204,266 @@ input[type="radio"].visually-hidden {
   padding: 10px 59px 10px 64px; 
 }
 
+.footer-lighter {
+  background: #32425c;
+}
+
+.footer-darker {
+  background: #293449;
+}
+
+.footer-lighter .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-lighter-top,
+.footer-lighter-bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-lighter-top {
+  margin-bottom: 27px;
+}
+
+.footer-lighter-bottom {
+  margin-bottom: 50px;
+}
+
+.footer-logo {
+  max-width: 220px;
+  padding: 18px 42px 15px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #fff;
+  background: #ee3643;
+  border-bottom: 5px solid #b52933;
+  text-transform: uppercase;
+}
+
+.footer-main-menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  max-width: 620px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-main-menu li {
+  margin-top: 38px;
+  margin-left: 59px;
+}
+
+.footer-main-menu a {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+  text-decoration: none;
+}
+
+.footer-main-menu a::after {
+  content: "";
+  position: relative;
+  bottom: 5px;
+  width: 100%;
+  height: 1px;
+  background: transparent;
+}
+
+.footer-main-menu a:hover::after,
+.footer-main-menu a:focus::after {
+  background: #fff;
+}
+
+.footer-main-menu a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-main-menu a:active::after {
+  background: transparent;
+}
+
+
+
+.footer-lighter-bottom p {
+  width: 330px;
+  margin: 0;
+  padding-left: 3px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+}
+
+.footer-offer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 560px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-offer-menu li {
+  margin-left: 60px;
+}
+
+.footer-offer-menu li:first-child {
+  margin-left: 0;
+}
+
+.footer-offer-menu a {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffda96;
+  text-decoration: none;
+}
+
+.footer-offer-menu a::after {
+  content: "";
+  position: relative;
+  bottom: 5px;
+  width: 100%;
+  height: 1px;
+  background: transparent;
+}
+
+.footer-offer-menu a:hover::after,
+.footer-offer-menu a:focus::after {
+  background: #ffda96;
+}
+
+.footer-offer-menu a:active {
+  color: rgba(255, 209, 128, 0.5);
+}
+
+.footer-offer-menu a:active::after {
+  background: transparent;
+}
+
+.footer-darker .container {
+  display: flex;
+  padding-top: 35px;
+  padding-bottom: 31px;
+}
+
+.footer-darker p {
+  flex-shrink: 0;
+  margin: 0;
+  margin-top: 3px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.footer-darker p:first-of-type {
+  width: 230px;
+  margin-right: 155px;
+}
+
+.footer-darker ul {
+  display: flex;
+  flex-shrink: 0;
+  width: 150px;
+  margin: 0;
+  margin-right: 105px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-darker li {
+  margin-left: 5px;
+}
+
+.social-list a {
+  display: block;
+  position: relative;
+  width: 41px;
+  height: 41px;
+  background: #212a3a;
+  border-radius: 50%;
+}
+
+.social-list a:hover,
+.social-list a:focus {
+  background: #ee3643;
+}
+
+.footer-darker img {
+  position: absolute;
+}
+
+.vkontakte img {
+  top: 13px;
+  left: 8px;
+}
+
+.facebook img {
+  top: 10px;
+  left: 14px;
+}
+
+.instagram img {
+  top: 10px;
+  left: 9px;
+}
+
+.footer-darker p:nth-of-type(2) {
+  width: 140px;
+  margin-right: 20px;
+  word-break: normal;
+}
+
+.footer-darker p:last-of-type {
+  width: 140px;
+  padding-left: 29px;
+  box-sizing: border-box;
+  word-break: normal;
+}
+
+.email,
+.developer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #ffd180;
+  text-decoration: none;
+}
+
+.email::after,
+.developer::after {
+  content: "";
+  position: relative;
+  bottom: 1px;
+  width: 100%;
+  height: 1px;
+  background: transparent;
+}
+
+.email:hover::after,
+.email:focus::after,
+.developer:hover::after,
+.developer:focus::after {
+  background: #ffd180;
+}
+
+.email:active,
+.developer:active {
+  color: #ee3643;
+  background: transparent;
+}
+
+.email:active::after,
+.developer:active::after {
+  background: transparent;
+}
