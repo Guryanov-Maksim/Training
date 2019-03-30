@@ -1100,7 +1100,7 @@ input[type="radio"].visually-hidden {
 .about-us-grid {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 86px;
+  margin-bottom: 92px;
 }
 
 .about-us {
@@ -1167,7 +1167,7 @@ input[type="radio"].visually-hidden {
   border-radius: 2px;
 }
 
-.about-us a {
+.about-us .about-us-button {
   padding: 10px 41px;
 }
 
