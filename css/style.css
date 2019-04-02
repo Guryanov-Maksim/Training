@@ -1594,3 +1594,33 @@ input[type="radio"].visually-hidden {
   left: -2px;
   transform: rotate(-45deg);
 }
+
+.modal-map {
+  position: fixed;
+  /* display: block; */
+  display: none;
+  width: 940px;
+  height: 446px;
+  top: 56px;
+  left: 50%;
+  margin-left: -470px;
+  z-index: 3;
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.modal-map img {
+  position: absolute;
+  top: -14px;
+  left: -15px;
+  width: 970px;
+  height: 476px;
+}
+
+.modal-map iframe {
+  position: relative;
+  border: none;
+  z-index: 3;
+}
