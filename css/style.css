@@ -1487,3 +1487,110 @@ input[type="radio"].visually-hidden {
 .developer:active::after {
   background: transparent;
 }
+
+.modal-feedback {
+  position: fixed;
+  /* display: block; */
+  display: none;
+  width: 620px;
+  top: 56px;
+  left: 50%;
+  margin-left: -310px;
+  z-index: 3;
+  border-top: 7px solid #ff5357;
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 20px 40px 0 #000;
+}
+
+.feedback-form .white-background,
+.feedback-form .gray-background {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000;
+}
+
+.feedback-form .white-background {
+  margin-bottom: 37px;
+  padding: 47px 80px 0;
+}
+
+.feedback-form .gray-background {
+  padding: 37px 80px;
+  background: #f4f4f4;
+}
+
+.feedback-form-item {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  margin: 0;
+  margin-bottom: 21px;
+  box-sizing: border-box;
+}
+
+.feedback-form-item:last-of-type {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.feedback-form-item label {
+  margin-bottom: 10px;
+}
+
+.feedback-form-item input,
+.feedback-form-item textarea {
+  padding: 8px 14px 11px;
+  border: 2px solid #dee3e4;
+  border-radius: 2px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+}
+
+.feedback-form-item textarea {
+ height: 114px;
+ box-sizing: border-box;
+}
+
+.gray-background button {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 23px;
+  height: 23px;
+  background: none;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.close-button::before,
+.close-button::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 5px;
+  background: #ee3643;
+  border-radius: 2px;
+}
+
+.close-button::before {
+  top: 10px;
+  left: -2px;
+  transform: rotate(45deg);
+}
+
+.close-button::after {
+  top: 10px;
+  left: -2px;
+  transform: rotate(-45deg);
+}
