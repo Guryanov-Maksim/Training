@@ -288,5 +288,27 @@
         </div>
       </div>
     </footer>
+    <section class="modal-feedback">
+      <form class="feedback-form" action="get" action="https://echo.htmlacademy.ru">
+        <div class="white-background">
+          <p class="feedback-form-item">
+            <label for="user-name">Ваше имя:</label>
+            <input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+          </p>
+          <p class="feedback-form-item">
+            <label for="user-email">Ваш e-mail:</label>
+            <input type="text" name="email" id="user-email" placeholder="email@example.com">
+          </p>
+          <p class="feedback-form-item">
+            <label for="user-letter">Текст письма:</label>
+            <textarea name="letter" id="user-letter" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+          </p>
+        </div>
+        <div class="gray-background">
+          <button class="red-button" type="submit">Отправить</button>
+        </div>
+      </form>
+      <button class="close-button" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
