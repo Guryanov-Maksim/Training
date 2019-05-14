@@ -228,7 +228,8 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
 }
 
-.header-bottom h1 {
+.header-bottom h1,
+.header-bottom p:first-child {
   display: flex;
   margin: 0;
   margin-bottom: 42px;
