@@ -167,6 +167,15 @@ input[type="radio"].visually-hidden {
   background: #212a3a;
 }
 
+.not-empty {
+  background: #ee3643;
+}
+
+.not-empty:hover,
+.not-empty:focus {
+  background: #ca2d38;
+}
+
 .bookmarks:hover::before,
 .bookmarks:focus::before,
 .basket:hover::before,
@@ -177,6 +186,10 @@ input[type="radio"].visually-hidden {
 .bookmarks:active,
 .basket:active {
   background: #161d29;
+}
+
+.not-empty:active {
+  background: #ba2632;
 }
 
 .bookmarks:active::before,
@@ -262,7 +275,8 @@ input[type="radio"].visually-hidden {
   padding: 3px 10px;
 }
 
-.user-menu {
+.user-menu,
+.user-menu-entered {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -270,6 +284,11 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.user-menu-entered {
+  justify-content: flex-start;
+  align-content: flex-start;
 }
 
 .user-menu a {
@@ -283,6 +302,131 @@ input[type="radio"].visually-hidden {
   color: #000;
   background: #fff;
   word-wrap: break-word;
+}
+
+.user-menu-entered li {
+  margin-left: 18px;
+  margin-right: 13px;
+}
+
+.user-menu-entered li:last-child {
+  position: relative;
+}
+
+.user-menu-entered li:last-child::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -16px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #32425c;
+}
+
+.user-menu-entered li:first-child {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.user-menu-entered a {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  font-style: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+}
+
+.user-menu-entered a:hover,
+.user-menu-entered a:focus {
+  color: #ee3643;
+}
+
+.user-menu-entered a:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.user-menu-entered a::after {
+  content: "";
+  position: relative;
+  top: -2px;
+  width: 100%;
+  height: 1px;
+  background-color: #32425c;
+}
+
+.user-menu-entered a:hover::after,
+.user-menu-entered a:focus::after {
+  background-color: #ee3643;
+}
+
+.user-menu-entered a:active::after {
+  background-color: rgba(50, 66, 92, 0.3);
+}
+
+.user-menu-entered .user-name {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 12px 47px;
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000;
+  background: #fff;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.user-menu-entered .user-name:focus,
+.user-menu-entered .user-name:hover {
+  color: #000;
+}
+
+.user-menu-entered .user-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-menu-entered .user-name::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 14px;
+  width: 20px;
+  height: 17px;
+}
+
+.user-menu-entered .user-name::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  width: 20px;
+  height: 17px;
+}
+
+
+.user-menu-entered .user-name:hover::before,
+.user-menu-entered .user-name:focus::before {
+  background: url("../img/icon-user-sprites.png") no-repeat -30px 0;
+}
+
+.user-menu-entered .user-name::before,
+.user-menu-entered .user-name:active::before {
+  background: url("../img/icon-user-sprites.png") no-repeat 0 0;
+}
+
+.user-menu-entered .user-name:hover::after,
+.user-menu-entered .user-name:focus::after {
+  background: url("../img/icon-logout-sprites.png") no-repeat -30px 0;
+}
+
+.user-menu-entered .user-name::after,
+.user-menu-entered .user-name:active::after {
+  background: url("../img/icon-logout-sprites.png") no-repeat 0 0;
 }
 
 .user-menu .enter {
