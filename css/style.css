@@ -800,7 +800,6 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 24px;
   color: #fff;
-  letter-spacing: 1px;
 }
 
 .slider-list a {
@@ -1093,8 +1092,6 @@ input[type="radio"].visually-hidden {
           order: -1;
   top: 6px;
   left: 17px;
-  margin-top: 6px;
-  margin-bottom: 2px;
 }
 
 .goods-item:nth-child(2) .goods-image,
