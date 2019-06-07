@@ -2571,3 +2571,73 @@ input[type="radio"].visually-hidden {
   border: none;
   z-index: 3;
 }
+
+.modal-cart {
+  display: none;
+  position: fixed;
+  top: 200px;
+  left: 50%;
+  width: 620px;
+  margin-left: -310px;
+  background: #fff;
+  border-top: 7px solid #ee3643;
+  box-sizing: border-box;
+  box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
+}
+
+.modal-cart h2 {
+  position: relative;
+  margin: 0;
+  padding: 66px 80px 68px 179px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.modal-cart h2::before {
+  position: absolute;
+  content: "";
+  top: 48px;
+  left: 81px;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: #63a63e;
+}
+
+.modal-cart h2::after {
+  position: absolute;
+  content: "";
+  top: 67px;
+  left: 96px;
+  width: 37px;
+  height: 21px;
+  border: 7px solid #fff;
+  background: #63a63e;
+  box-sizing: border-box;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+}
+
+.modal-cart-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 37px 80px;
+  background: #f1f1f1;
+}
+
+.order-button {
+  padding: 11px 60px 9px;
+}
+
+.continue-button {
+  padding: 10px 47px 9px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+  background: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 2px; 
+}
