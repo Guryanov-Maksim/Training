@@ -809,7 +809,7 @@ input[type="radio"].visually-hidden {
 .slider-list li {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -826,8 +826,11 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-list li:last-child {
-  display: none;
   background: #ab9a85 url("../img/perforator-slide.jpg") no-repeat 0 0;
+}
+
+.slider-list .active {
+  display: flex;
 }
 
 .slider-list h4 {
