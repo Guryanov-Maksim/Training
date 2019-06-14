@@ -13,6 +13,34 @@ var creditButton = document.querySelector('.credit-button');
 var creditSlide = document.querySelector('.slide-credit');
 var serviceList = document.querySelectorAll('.servise-slides li');
 var serviceButtons = document.querySelectorAll('.services-button');
+var feedback = document.querySelector('.contacts-button');
+var modalFeedback = document.querySelector('.modal-feedback');
+var close = document.querySelector('.close-button');
+var user = document.querySelector('.user');
+var map = document.querySelector('.map');
+var modalMap = document.querySelector('.modal-map');
+var closeMap = document.querySelector('.modal-map .close-button');
+
+console.log(map);
+
+map.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modalMap.classList.add('modal-show');
+});
+
+feedback.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modalFeedback.classList.add("modal-show");
+  user.focus();
+});
+
+close.addEventListener("click", function (evt) {
+  modalFeedback.classList.remove("modal-show");
+});
+
+closeMap.addEventListener("click", function (evt) {
+  modalMap.classList.remove("modal-show");
+});
 
 deliveryButton.addEventListener("click", function (evt) {
   evt.preventDefault();

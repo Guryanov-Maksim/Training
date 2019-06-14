@@ -2552,6 +2552,7 @@ input[type="radio"].visually-hidden {
   border: none;
   font-size: 0;
   cursor: pointer;
+  z-index: 3;
 }
 
 .close-button::before,
@@ -2680,4 +2681,8 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 2px; 
+}
+
+.modal-show {
+  display: block;
 }
