@@ -5,6 +5,47 @@ var dots = document.querySelectorAll('.dot');
 var perforatorSlide = document.querySelector('.perforators-dot');
 var drillsSlide = document.querySelector('.drills-dot');
 var currentSlide = 0;
+var deliveryButton = document.querySelector('.delivery-button');
+var deliverySlide = document.querySelector('.slide-delivery');
+var warrantButton = document.querySelector('.warrant-button');
+var warrantSlide = document.querySelector('.slide-warrant');
+var creditButton = document.querySelector('.credit-button');
+var creditSlide = document.querySelector('.slide-credit');
+var serviceList = document.querySelectorAll('.servise-slides li');
+var serviceButtons = document.querySelectorAll('.services-button');
+
+deliveryButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  for (var i = 0; i < serviceList.length; i++) {
+    serviceList[i].classList.remove('current-slide');
+    serviceButtons[i].classList.remove('button-current');
+  };
+  deliverySlide.classList.add('current-slide');
+  deliveryButton.classList.add('button-current');
+  deliveryButton.blur();
+});
+
+warrantButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  for (var i = 0; i < serviceList.length; i++) {
+    serviceList[i].classList.remove('current-slide');
+    serviceButtons[i].classList.remove('button-current');
+  };
+  warrantSlide.classList.add('current-slide');
+  warrantButton.classList.add('button-current');
+  warrantButton.blur();
+});
+
+creditButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  for (var i = 0; i < serviceList.length; i++) {
+    serviceList[i].classList.remove('current-slide');
+    serviceButtons[i].classList.remove('button-current');
+  };
+  creditSlide.classList.add('current-slide');
+  creditButton.classList.add('button-current');
+  creditButton.blur();
+});
 
 prevButton.onclick = function () {
   sliders[currentSlide].className = '';
@@ -49,3 +90,4 @@ perforatorSlide.onclick = function () {
   dots[currentSlide].classList.add('current-dot');
   sliders[currentSlide].className = 'active';
 }
+
